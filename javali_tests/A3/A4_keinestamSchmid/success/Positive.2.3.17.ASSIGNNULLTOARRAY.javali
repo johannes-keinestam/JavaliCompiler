@@ -1,0 +1,9 @@
+//The constant null can be assigned to any reference type.
+//rule 2.3.17
+
+class Main {
+int[] x;
+	void main() {
+		x = null;
+	}
+}

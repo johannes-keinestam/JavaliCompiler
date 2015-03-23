@@ -1,0 +1,22 @@
+// Constant Folding: SimpleWhile case.
+class A {}
+class B extends A {}
+
+class Main {
+	void main() {
+		int a;
+		int b;
+		boolean x;
+
+		a = 1;
+		b = 2;
+		x = true;
+
+		a = 1; // this cannot be removed by constant folding since we do not "know" what x will evaluate to.
+		x = false;
+		while (x) {
+			b = a + 2;
+		}
+		write(a);
+	}
+}

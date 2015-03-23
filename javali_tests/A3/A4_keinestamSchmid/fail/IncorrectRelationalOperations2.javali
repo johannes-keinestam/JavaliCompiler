@@ -1,0 +1,7 @@
+// Rule 2.3.7: Tests that relational operations cannot be applied to non-float/int types.
+class Main {
+	void main() {
+		boolean rb;
+		rb = true < false;
+	}
+}

@@ -1,0 +1,17 @@
+// Rule 2.3.8: Tests that equality operations cannot be applied to unrelated class types.
+class A {}
+class B {}
+
+class Main {
+	void main() {
+		boolean r;
+		A a; B b;
+
+		a = new A();
+		b = new B();
+
+		// result type of equality operation verified
+		// by assigning to int or float variable
+		r = a == b;
+	}
+}

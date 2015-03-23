@@ -1,0 +1,13 @@
+// Rule 2.2.6: There are no two fields with the same name in a single class.
+
+class Main {
+	void main() {
+		int i;
+	}
+}
+
+class Gaga {
+	int a;
+	int b;
+}
+

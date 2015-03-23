@@ -1,0 +1,12 @@
+//No access to methods of array
+//Rule 2.3.21
+
+class Main {
+int y;
+	void main() {
+		int[] x;
+		int z;
+		x = new int[10];
+		z = x.notAMethod();
+	}
+}

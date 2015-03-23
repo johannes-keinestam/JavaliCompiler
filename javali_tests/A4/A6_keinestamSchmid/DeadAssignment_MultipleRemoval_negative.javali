@@ -1,0 +1,24 @@
+//DeadAssignment: Multiple case. Nothing can be removed since everything is used used later.
+class A {}
+class B extends A {}
+
+class Main {
+	void main() {
+		int a;
+		int b;
+		float x;
+		float y;
+		boolean t;
+		t = true;
+		x = 1.0;
+		y = 2.0;
+		a = 1;
+		b = 2;
+		write(a);
+		writeln();
+		write(b);
+		if(t){
+			write(x*y);
+		}
+	}
+}

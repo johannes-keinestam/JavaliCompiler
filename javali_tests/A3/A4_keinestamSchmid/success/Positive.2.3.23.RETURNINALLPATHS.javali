@@ -1,0 +1,34 @@
+//POS 2.3.23
+//Return statement in all paths
+
+class Main{
+	
+	void main(){
+		int x;
+		boolean b;
+		x = checkReturnFirst();
+		b = checkReturnSecond();
+	}
+	int checkReturnFirst(){
+		while(true){
+			if(true){
+				return 1;
+			}
+			else{
+				return 2;
+			}
+		}
+	}
+	boolean checkReturnSecond(){
+		if(true){
+			if(true){
+				if(true){
+					return true;
+				}
+			}
+		}
+		else{
+			return false;
+		}
+	}
+}

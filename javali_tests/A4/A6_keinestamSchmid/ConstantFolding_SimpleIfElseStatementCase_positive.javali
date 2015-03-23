@@ -1,0 +1,22 @@
+// Constant Folding: Simple if statement case.
+class A {}
+class B extends A {}
+
+class Main {
+	void main() {
+		int a;
+		int b;
+		boolean x;
+
+		a = 1;
+		b = 2;
+		x = true;
+
+		if (true) {
+			b = a + 2; // this is always run
+		} else {
+			b = a + 9;
+		}
+		write(a);
+	}
+}

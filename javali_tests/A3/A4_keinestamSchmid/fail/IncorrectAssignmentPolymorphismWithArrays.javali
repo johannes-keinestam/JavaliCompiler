@@ -1,0 +1,15 @@
+// Rule 2.3.4: Verifies that subtyping relationship does not exist among arrays.
+class A {
+}
+class B extends A {
+}
+class C extends B {
+}
+class D extends B {
+} 
+class Main {
+	void main() {
+		A[] as;
+		as = new B[1];
+	}
+}

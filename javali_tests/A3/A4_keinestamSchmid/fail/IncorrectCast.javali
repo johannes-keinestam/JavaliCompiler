@@ -1,0 +1,13 @@
+// Rule 2.3.10: Verifying that casts to unrelated types is not allowed.
+class A {}
+class B {}
+
+class Main {
+    void main() {
+        A a; B b;
+        a = new A();
+        b = new B();
+        
+        a = (A)b;
+    }
+}

@@ -1,0 +1,21 @@
+// Rule 2.3.11: Verifying that incorrect number of parameters in method call are not allowed.
+class A {}
+class B extends A {}
+class X extends A {}
+class C extends B {}
+
+class Main {
+    void main() {
+        A a; B b; X x; C c;
+        a = new A();
+        b = new B();
+        x = new X();
+        c = new C();
+        
+        myMethod(x, b, b, a);
+    }
+
+    void myMethod(A a, A a2, B b) {
+        return;
+    }
+}

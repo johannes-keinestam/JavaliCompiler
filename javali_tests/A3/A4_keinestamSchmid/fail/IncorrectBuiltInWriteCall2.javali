@@ -1,0 +1,6 @@
+// Rule 2.3.1: Tests that an incorrect call to write fails.
+class Main {
+	void main() {
+		write();
+	}
+}

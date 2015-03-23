@@ -1,0 +1,24 @@
+// Rule 2.3.7: Tests that relational operations can be applied to arguments of 
+// float _OR_ int, and result type is boolean.
+class Main {
+	void main() {
+		int i0, i1;
+		float f0, f1;
+		boolean rb;
+
+		i0 = 1; i1 = 2;
+		f0 = 1.1; f1 = 2.2;
+
+		// result type of relational operation verified
+		// by assigning to boolean variable
+		rb = i0 < i1;
+		rb = i0 <= i1;
+		rb = i0 > i1;
+		rb = i0 >= i1;
+
+		rb = f0 < f1;
+		rb = f0 <= f1;
+		rb = f0 > f1;
+		rb = f0 >= f1;
+	}
+}

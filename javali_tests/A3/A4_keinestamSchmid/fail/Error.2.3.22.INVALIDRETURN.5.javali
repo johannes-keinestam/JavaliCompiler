@@ -1,0 +1,17 @@
+// Test Check valid returntype
+// rule 2.3.22
+
+class Main {
+	int[] a;
+	
+	int[] array(){
+		int[] array;
+		array = new int[10];
+		return 10;
+	}
+	
+	void main() {
+		a = array();
+
+	}
+}

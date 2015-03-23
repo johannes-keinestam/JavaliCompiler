@@ -1,0 +1,20 @@
+// Rule 2.2.3: There is no circular inheritance (i.e., A extends B and B extends A).
+
+class Main {
+	void main() {
+		int i;
+	}
+}
+
+class A extends B {
+	void swap() {
+		int j;
+	}
+}
+
+class B extends A {
+	void snap() {
+		int k;
+	}
+}
+

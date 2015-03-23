@@ -1,0 +1,11 @@
+// Rule 2.3.5: Tests that arithmetic operations cannot be
+// applied two different argument types.
+class Main {
+	void main() {
+		int ri, i1;
+		float f;
+		i1 = 1; f = 1.1;
+
+		ri = f / i1;
+	}
+}

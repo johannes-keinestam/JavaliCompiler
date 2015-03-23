@@ -1,0 +1,14 @@
+// Rule 2.2.4: No class is declared with the name "Object". This name is reserved for a predefined class which shall serve as the root of the inheritance hierarchy.
+
+class Main {
+	void main() {
+		int i;
+	}
+}
+
+class Object {
+	void swap() {
+		int j;
+	}
+}
+

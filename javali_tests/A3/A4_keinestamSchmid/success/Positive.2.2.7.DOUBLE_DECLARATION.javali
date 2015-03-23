@@ -1,0 +1,23 @@
+// Rule 2.2.7: There are no two methods with the same name in a single class.
+
+class Main {
+	void main() {
+		int i;
+	}
+}
+
+class A {
+	int a;
+	int b;
+
+	void swap(int a, int b) {
+		int i;
+		i = a + b;
+	}
+
+	void snap(int a) {
+		int i;
+		i = a;
+	}
+}
+

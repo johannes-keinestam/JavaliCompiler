@@ -1,0 +1,21 @@
+//POS 2.3.14
+//All referenced methods must exist
+class Reference{
+	
+	int add(int x, int y){
+		return x+y;
+	}
+}
+
+class Main{
+	int x;
+	int y;
+	int z;
+	Reference r;
+	void main(){
+		x = 5;
+		y = 10;
+		r = new Reference();
+		z = r.add(x,y);
+	}
+}

@@ -1,0 +1,21 @@
+// Test Check valid returntype
+// rule 2.3.22
+
+class referenceType{}
+
+class subType extends referenceType{}
+
+class Main {
+	referenceType r;
+	
+	subType sub(){
+		referenceType ref;
+		ref = new referenceType();
+		return ref;
+	}
+	
+	void main() {
+		r = sub();
+
+	}
+}

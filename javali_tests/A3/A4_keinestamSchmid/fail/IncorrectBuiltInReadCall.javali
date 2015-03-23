@@ -1,0 +1,7 @@
+// Rule 2.3.2: Tests that an incorrect call to read fails.
+class Main {
+	void main() {
+		int i;
+		i = read(123);
+	}
+}

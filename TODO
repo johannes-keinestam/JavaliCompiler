@@ -1,0 +1,12 @@
+- Complete constant folding -- partial constant folding
+	-Add flag -once, if once is not set, run constant folding multiple times(hardcoded?/until convergence?)
+
+- Testing for constant folding (done)
+- Testing dead assignment elimination (done)
+We can always add more testcases
+
+- Check correctness of test cases one more time
+
+- Constant folding for null constants? 
+
+- Dead assignments in if(false){//operations on variable => not dead}

@@ -1,0 +1,15 @@
+// Rule 2.3.4: Verifies that lhs of assignment cannot be supertype.
+class A {
+}
+class B extends A {
+}
+class C extends B {
+}
+class D extends B {
+} 
+class Main {
+	void main() {
+		D d;
+		d = new A();
+	}
+}

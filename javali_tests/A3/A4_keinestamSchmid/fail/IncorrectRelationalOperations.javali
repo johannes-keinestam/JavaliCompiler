@@ -1,0 +1,14 @@
+// Rule 2.3.7: Tests that relational operations cannot be applied to arguments of 
+// two different types.
+class Main {
+	void main() {
+		int i0;
+		float f0;
+		boolean rb;
+
+		i0 = 1;
+		f0 = 1.1;
+
+		rb = i0 < f0;
+	}
+}

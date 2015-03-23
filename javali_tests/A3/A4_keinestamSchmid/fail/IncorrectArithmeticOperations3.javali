@@ -1,0 +1,10 @@
+// Rule 2.3.5: Tests that arithmetic operations cannot be assigned to wrong type.
+class Main {
+	void main() {
+		int i0, i1;
+		float rf;
+		i0 = 0; i1 = 1;
+
+		rf = i0 + i1;
+	}
+}

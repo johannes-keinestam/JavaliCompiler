@@ -1,0 +1,7 @@
+// Rule 2.3.7: Tests that relational operations cannot be assigned to non-bool var.
+class Main {
+	void main() {
+		int i;
+		i = 1 < 2;
+	}
+}

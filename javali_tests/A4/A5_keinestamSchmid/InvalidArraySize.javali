@@ -1,0 +1,10 @@
+// Rule 2.3.10: Verifying that casts to super or subtype is allowed.
+class A {}
+class B extends A {}
+
+class Main {
+	void main() {
+		A[] a;
+		a = new A[-1];
+	}
+}

@@ -1,0 +1,7 @@
+// Rule 2.3.9: Tests that readf cannot produce non-float type.
+class Main {
+	void main() {
+		int r;
+		r = readf();
+	}
+}

@@ -1,0 +1,7 @@
+class Main {
+	void main() {
+		Main m;
+		m = null;
+		m.main();
+	}
+}

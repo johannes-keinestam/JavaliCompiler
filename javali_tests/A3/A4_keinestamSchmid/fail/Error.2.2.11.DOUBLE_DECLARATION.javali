@@ -1,0 +1,19 @@
+// Rule 2.2.11: No method may have two local variables with the same name.
+
+class Main {
+	void main() {
+		int i;
+	}
+}
+
+class Gaga {
+	int a;
+	int b;
+
+	void swap(int a, int b) {
+		int i;
+		int i;
+		i = a + b;
+	}
+}
+

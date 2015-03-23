@@ -1,0 +1,11 @@
+//No access to fields of array
+//Rule 2.3.21
+
+class Main {
+int y;
+	void main() {
+		int[] x;
+		x = new int[10];
+		y = x.l;
+	}
+}

@@ -1,0 +1,48 @@
+// Test virtual method calls.
+
+class A {
+	void override() {
+		write(0);
+		writeln();
+	}
+
+	void base() {
+		write(1);
+		writeln();
+	}
+}
+
+class B extends A {
+	void override() {
+		write(2);
+		writeln();
+	}
+
+	void sub() {
+		write(3);
+		writeln();
+	}
+}
+
+class Main {
+	void main() {
+		A a;
+		B b;
+
+		writeln();
+		a = new A();
+		a.base();
+		a.override();
+
+		writeln();
+		b = new B();
+		b.base();
+		b.override();
+		b.sub();
+
+		writeln();
+		a = b;
+		a.base();
+		a.override();
+	}
+}

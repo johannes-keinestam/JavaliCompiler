@@ -1,0 +1,8 @@
+// Rule 2.3.3: Tests that a incorrect (i.e. non-bool) if condition fails.
+class Main {
+	void main() {
+		if (6) {
+			return;
+		}
+	}
+}

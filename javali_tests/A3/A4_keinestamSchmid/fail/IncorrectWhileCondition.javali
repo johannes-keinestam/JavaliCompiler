@@ -1,0 +1,8 @@
+// Rule 2.3.3: Tests that a incorrect (i.e. non-bool) while condition fails.
+class Main {
+	void main() {
+		while (90) {
+			return;
+		}
+	}
+}

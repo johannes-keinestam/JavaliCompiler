@@ -1,0 +1,21 @@
+// Rule 2.2.5: All classes have unique names.
+
+class Main {
+	void main() {
+		int i;
+	}
+}
+
+class A {
+	void swap() {
+		int j;
+	}
+}
+
+class B {
+	void snoop() {
+		int j;
+	}
+}
+
+

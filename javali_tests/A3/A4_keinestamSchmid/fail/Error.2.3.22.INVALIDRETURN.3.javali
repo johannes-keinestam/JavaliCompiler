@@ -1,0 +1,16 @@
+// Test Check valid returntype
+// rule 2.3.22
+
+
+class Main {
+	float i;
+	
+	float m(){
+		return 5;
+	}
+	
+	void main() {
+		i = m();
+
+	}
+}

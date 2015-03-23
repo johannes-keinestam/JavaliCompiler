@@ -1,0 +1,27 @@
+// Rule 2.2.9: The types of the parameters and the return type of overridden methods must be the same as for the corresponding method in the superclass.
+// wrong parameter type
+class Main {
+	void main() {
+		int i;
+	}
+}
+
+class superClass {
+	int a;
+	int b;
+
+	void swap(int a, int b) {
+		int i;
+		i = a + b;
+	}
+}
+
+class subClass extends superClass {
+	int a;
+	int b;
+
+	void swap(float a, int b) {
+		int i;
+	}
+}
+

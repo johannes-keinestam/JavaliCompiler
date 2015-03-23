@@ -1,0 +1,9 @@
+// Test for All referenced variables must be defined. (NO SUCH VARIABLE)
+// rule 2.3.19
+class Main {
+int y;
+	void main() {
+		int x;
+		z = 1;
+	}
+}

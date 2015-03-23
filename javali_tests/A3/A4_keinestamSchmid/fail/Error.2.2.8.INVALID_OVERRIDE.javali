@@ -1,0 +1,28 @@
+// Rule 2.2.8: Overridden methods must have the same number of parameters as the method from the superclass.
+
+class Main {
+	void main() {
+		int i;
+	}
+}
+
+class superClass {
+	int a;
+	int b;
+
+	void swap(int a, int b) {
+		int i;
+		i = a + b;
+	}
+}
+
+class subClass extends superClass {
+	int a;
+	int b;
+
+	void swap(int a) {
+		int i;
+		i = a;
+	}
+}
+

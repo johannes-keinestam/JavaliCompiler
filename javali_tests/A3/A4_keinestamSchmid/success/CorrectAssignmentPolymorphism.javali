@@ -1,0 +1,18 @@
+// Rule 2.3.4: Verifies that lhs of assignment can be subtypes.
+class A {
+}
+class B extends A {
+}
+class C extends B {
+}
+class D extends B {
+} 
+class Main {
+	void main() {
+		A a;
+		a = new A();
+		a = new B();
+		a = new C();
+		a = new D();
+	}
+}

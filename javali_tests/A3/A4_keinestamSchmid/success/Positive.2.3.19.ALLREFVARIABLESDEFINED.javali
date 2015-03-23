@@ -1,0 +1,21 @@
+//POS 2.3.19
+//All referenced variables must be defined
+
+class Main{
+	int x;
+	int y;
+	float f;
+	float g;
+	boolean b;
+	boolean n;
+	void main(){
+		int x;
+		float f;
+                x = 10;
+                f = 2.5;
+		b = true;
+		y = x;
+		g = f;
+		n = b;
+	}
+}

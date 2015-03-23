@@ -1,0 +1,13 @@
+//Simple test case for dead assignment
+class A {}
+class B extends A {}
+
+class Main {
+	void main() {
+		int a;
+		int b;
+		a = 1;
+		b = 2; //this should be removed since it is never used.
+		print(a);
+	}
+}

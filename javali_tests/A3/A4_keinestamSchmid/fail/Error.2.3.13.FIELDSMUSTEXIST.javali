@@ -1,0 +1,15 @@
+//All referenced fields must exist. (NO_SUCH_FIELD)
+//Rule 2.3.13
+
+class Reference{
+	int exists;
+}
+
+class Main {
+int y;
+Reference r;
+	void main() {
+		r = new Reference();
+		y = r.doesNotExist;
+	}
+}

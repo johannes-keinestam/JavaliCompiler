@@ -1,0 +1,9 @@
+// Rule 2.2.1: There exists a class Main with a method main.
+// missing Main and main
+class Not {
+	void man() {
+		int i;
+	}
+}
+
+

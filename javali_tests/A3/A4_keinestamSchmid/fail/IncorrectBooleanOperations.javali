@@ -1,0 +1,11 @@
+// Rule 2.3.6: Tests that boolean operations cannot be applied to non-bool arguments.
+class Main {
+	void main() {
+		boolean bi, b0;
+		int i;
+
+		b0 = true; i = 1;
+
+		bi = b0 && i;
+	}
+}

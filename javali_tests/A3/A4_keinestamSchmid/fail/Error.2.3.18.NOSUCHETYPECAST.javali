@@ -1,0 +1,13 @@
+//The type name in a new statement or cast statement must be the name of a 
+//valid type. (NO SUCH TYPE)
+//rule 2.3.18
+
+
+class Main {
+int y;
+	void main() {
+		int x;
+		int z;
+		z = (NOSUCHTYPE)x;
+	}
+}

@@ -1,0 +1,7 @@
+class Main {
+	void main() {
+		int[] is;
+		is = null;
+		is[0] = 1;
+	}
+}

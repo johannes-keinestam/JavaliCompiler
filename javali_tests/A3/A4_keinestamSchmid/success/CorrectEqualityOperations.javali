@@ -1,0 +1,32 @@
+// Rule 2.3.8: Tests that equality operations can be applied to arguments of 
+// float/int or subtypes, and result type is boolean.
+class A {}
+class B extends A {}
+
+class Main {
+	void main() {
+		int i0, i1;
+		float f0, f1;
+		boolean r;
+		A a; B b;
+
+		i0 = 1; i1 = 2;
+		f0 = 1.1; f1 = 2.2;
+		a = new A();
+		b = new B();
+
+		// result type of equality operation verified
+		// by assigning to int or float variable
+		r = i0 == i1;
+		r = i0 != i1;
+		r = f0 == f1;
+		r = f0 != f1;
+
+		r = a == b;
+		r = a != b;
+		r = a == a;
+		r = a != a;
+		r = b == a;
+		r = b != a;
+	}
+}

@@ -1,0 +1,22 @@
+//Negative test case regarding dead assignment visitor for nested while- & if-statements
+class A {}
+class B extends A {}
+
+class Main {
+	void main() {
+		int a;
+		int b;
+		b = 1337;
+		a = 1; // this should not be removed
+		while(true) {
+			if(true){
+				write(a); //This will always run, should not cause a to be removed by dead statement visitor.
+			}
+			else{
+				write(a);
+				write(b);
+			}
+		}
+		write(b);
+	}
+}

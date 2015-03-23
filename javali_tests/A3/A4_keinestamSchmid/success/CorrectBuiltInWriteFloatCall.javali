@@ -1,0 +1,12 @@
+// Rule 2.3.1: Tests that a correct call to writef works.
+class Main {
+	void main() {
+		float f;
+		f = 123.0;
+		writef(f);
+		writeln();
+		writef(f+3.4);
+		writeln();
+		writef(42.0);
+	}
+}

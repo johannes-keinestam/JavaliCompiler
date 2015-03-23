@@ -1,0 +1,9 @@
+//Pos 2.3.16
+//ArrayLength must be of integer type
+
+class Main{
+	int[] array;
+	void main(){
+		array = new int[100];
+	}
+}

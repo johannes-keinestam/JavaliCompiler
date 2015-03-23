@@ -1,0 +1,12 @@
+//POS 2.3.15
+//Indexing to an array dereference must be of integer type and array must be of arraytype
+
+class Main{
+	int[] array;
+	int x;
+	void main(){
+		array = new int[10];
+		array[1] = 10;
+		x = array[1];
+	}
+}

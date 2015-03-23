@@ -1,0 +1,10 @@
+// You should not be able to access the field or method of a non-object
+// rule 2.3.21
+
+class Main {
+	void main() {
+		int x;
+		x = 1;
+		x = x.l;
+	}
+}

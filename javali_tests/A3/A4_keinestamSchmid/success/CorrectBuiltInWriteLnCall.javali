@@ -1,0 +1,6 @@
+// Rule 2.3.2: Tests that a correct call to writeln succeeds.
+class Main {
+	void main() {
+		writeln();
+	}
+}

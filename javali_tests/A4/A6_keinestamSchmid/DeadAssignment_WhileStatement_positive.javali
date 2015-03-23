@@ -1,0 +1,16 @@
+//Positive test case regarding dead assignment visitor for while-statement.
+class A {}
+class B extends A {}
+
+class Main {
+	void main() {
+		int a;
+		int b;
+		b = 1337;
+		a = 1; // this should be removed
+		while (false) {
+			write(a); //This will never run, should not cause a to be kept by dead statement visitor.
+		}
+		write(b);
+	}
+}

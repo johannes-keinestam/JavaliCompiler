@@ -1,0 +1,11 @@
+//POS 2.3.13
+//All fields must exist
+
+class Main{
+	int y;
+	int x;
+	void main(){
+		x = 10;
+		y = x;
+	}
+}

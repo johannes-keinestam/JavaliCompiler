@@ -1,0 +1,15 @@
+//POS 2.3.20
+//LHS must not be a non-assignable expression. Only legal are variables, fields and array dereferences.
+
+class Main{
+	int x;
+	int[] array;
+
+	void main(){
+		int y;
+		array = new int[10];
+		x = 10;
+		array[1] = x;
+		y = array[1];
+	}
+}

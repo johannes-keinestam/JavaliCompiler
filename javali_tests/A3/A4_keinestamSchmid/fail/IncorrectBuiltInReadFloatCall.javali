@@ -1,0 +1,7 @@
+// Rule 2.3.2: Tests that an incorrect call to readf fails.
+class Main {
+	void main() {
+		float f;
+		f = readf(123);
+	}
+}

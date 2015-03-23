@@ -1,0 +1,15 @@
+//All referenced methods must exist (NO_SUCH_METHOD)
+//Rule 2.3.14
+
+class Reference{
+	void exists(){
+	}
+}
+class Main {
+int y;
+Reference r;
+	void main() {
+		r = new Reference();
+		y = r.doesNotExist();
+	}
+}

@@ -1,0 +1,13 @@
+//The index to an array dereference (x[i]) must be of integer type, and the array must be of array type.
+//The resulting type is the element type of the array. (TYPE ERROR)
+// rule 2.3.15
+
+class Main {
+float y;
+	void main() {
+		int[] x;
+		x = new int[10];
+		x[1] = 10;
+		y = x[1];
+	}
+}

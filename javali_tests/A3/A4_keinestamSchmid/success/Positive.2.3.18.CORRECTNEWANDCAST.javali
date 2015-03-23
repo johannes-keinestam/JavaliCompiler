@@ -1,0 +1,19 @@
+//POS 2.3.18
+//type in new or cast must be name of valid types;
+
+class Reference{
+	
+
+}
+class subReference extends Reference{
+	
+}
+class Main{
+	Reference casted;
+	subReference rsub;
+
+	void main(){
+		rsub = new subReference();
+		casted = (Reference)rsub;
+	}
+}

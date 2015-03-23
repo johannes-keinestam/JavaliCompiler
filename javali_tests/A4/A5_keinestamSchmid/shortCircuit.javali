@@ -1,0 +1,37 @@
+// Rule 2.3.10: Verifying that casts to super or subtype is allowed.
+class A {}
+class B extends A {}
+
+class Main {
+	boolean tru() {
+		write(1);
+		return true;
+	}
+	boolean fls() {
+		write(0);
+		return false;
+	}
+	void main() {
+		boolean b;
+		// Should print 12
+		if (tru() || fls()) {
+			write(2);
+		}
+		writeln();
+		// Should print 012;
+		if (fls() || tru()) {
+			write(2);
+		}
+		writeln();
+                // Should print 10
+                if (tru() && fls()) {
+                        write(2);
+                }
+                writeln();
+                // Should print 0;
+                if (fls() && tru()) {
+                        write(2);
+                }
+
+	}
+}

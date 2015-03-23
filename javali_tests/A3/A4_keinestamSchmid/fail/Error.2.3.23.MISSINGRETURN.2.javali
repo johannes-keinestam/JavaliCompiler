@@ -1,0 +1,18 @@
+//2.3.23
+//MISSING RETURN
+
+class Main {
+	int i;
+	int a(){
+		if(true){
+
+		}
+		else{
+			return 9;
+		}
+	}
+	
+	void main() {
+		i = a();
+	}
+}

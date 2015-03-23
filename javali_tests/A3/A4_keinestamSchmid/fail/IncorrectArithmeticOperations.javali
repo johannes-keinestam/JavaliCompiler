@@ -1,0 +1,9 @@
+// Rule 2.3.5: Tests that arithmetic operations cannot be
+// applied to invalid argument types.
+class Main {
+	void main() {
+		int ri, i1;
+		i1 = 1;
+		ri = true * i1;
+	}
+}

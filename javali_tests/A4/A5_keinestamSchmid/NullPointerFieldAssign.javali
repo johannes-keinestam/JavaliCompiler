@@ -1,0 +1,8 @@
+class Main {
+	int i;
+	void main() {
+		Main m;
+		m = null;
+		m.i = 1;
+	}
+}

@@ -1,0 +1,13 @@
+//2.3.23
+//MISSING RETURN
+
+class Main {
+	int i;
+	int a(){
+	}
+	
+	void main() {
+		i = a();
+
+	}
+}

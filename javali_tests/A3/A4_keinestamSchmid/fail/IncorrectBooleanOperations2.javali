@@ -1,0 +1,11 @@
+// Rule 2.3.6: Tests that boolean operations cannot be assigned to non-bool variable.
+class Main {
+	void main() {
+		boolean b1, b0;
+		int i;
+
+		b0 = true; b1 = false;
+
+		i = b0 && b1;
+	}
+}

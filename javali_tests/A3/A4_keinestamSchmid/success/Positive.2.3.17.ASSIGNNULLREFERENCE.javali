@@ -1,0 +1,15 @@
+//The constant null can be assigned to any reference type.
+//rule 2.3.17
+
+class Reference{
+	int x;
+	int y;
+}
+
+class Main {
+Reference r;
+
+	void main() {
+		r = null;
+	}
+}

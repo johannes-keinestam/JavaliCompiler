@@ -1,0 +1,28 @@
+// Rule 2.3.5: Tests that arithmetic operations can be applied to arguments of 
+// float _OR_ int, and result type is corresponding to argument types.
+class Main {
+	void main() {
+		int ri, i0, i1;
+		float rf, f0, f1;
+
+		i0 = 1; i1 = 2;
+		f0 = 1.1; f1 = 2.2;
+
+		// result type of arithmetic operation verified
+		// by assigning to int or float variable
+		ri = i0 * i1;
+		ri = i0 / i1;
+		ri = i0 % i1;
+		ri = i0 + i1;
+		ri = i0 - i1;
+		ri = -i1;
+		ri = +i1;
+
+		rf = f0 * f1;
+		rf = f0 / f1;
+		rf = f0 + f1;
+		rf = f0 - f1;
+		rf = +f1;
+		rf = -f1;
+	}
+}

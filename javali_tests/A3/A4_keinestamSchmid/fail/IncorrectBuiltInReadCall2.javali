@@ -1,0 +1,7 @@
+// Rule 2.3.9: Tests that read cannot produce non-int type.
+class Main {
+	void main() {
+		float r;
+		r = read();
+	}
+}

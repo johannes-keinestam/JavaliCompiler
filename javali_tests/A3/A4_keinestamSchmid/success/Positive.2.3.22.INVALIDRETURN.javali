@@ -1,0 +1,56 @@
+//2.3.22 positive case for 2.3.22
+
+class ReferenceType{
+
+}
+
+class SubClass extends ReferenceType{
+
+}
+
+class Main {
+	float f;
+	int i;
+	boolean b;
+	int[] a;	
+	ReferenceType r;
+	
+	int i(){
+		return 5;
+	}
+	
+	float f(){
+		return 1.337;
+	}
+	
+	boolean b(){
+		return false;
+	}
+	
+	int[] a(){
+		int[] array;
+		array = new int[10];
+		return array;
+	}
+	
+	ReferenceType r(){
+		ReferenceType ref;
+		ref = new ReferenceType();
+		return ref;
+	}
+	
+	ReferenceType sub(){
+		SubClass sub;
+		sub = new SubClass();
+		return sub;
+	}
+	
+	void main() {
+		i = i();
+		f = f();
+		b = b();
+		a = a();
+		r = r();
+		r = sub();
+	}
+}

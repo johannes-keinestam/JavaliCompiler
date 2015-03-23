@@ -1,0 +1,10 @@
+// Rule 2.3.1: Tests that a correct call to writef works.
+class Main {
+	void main() {
+		int i;
+		i = 123;
+		write(i);
+		write(i+34);
+		write(42);
+	}
+}

@@ -1,0 +1,21 @@
+// Rule 2.3.3: Tests that a correct (i.e.) bool if/while condition works.
+class Main {
+	void main() {
+		boolean b;
+		b = false;
+		if (true) {
+			return;
+		}
+		if (b && true || false) {
+			b = true;
+		} else {
+			return;
+		}
+		while (!b) {
+			return;
+		}
+		while (6 != 5){
+			return;
+		}
+	}
+}

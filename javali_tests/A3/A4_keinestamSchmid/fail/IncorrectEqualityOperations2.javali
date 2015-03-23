@@ -1,0 +1,17 @@
+// Rule 2.3.8: Tests that equality operations cannot be assigned to non-bool var.
+class A {}
+class B extends A {}
+
+class Main {
+	void main() {
+		int r;
+		A a; B b;
+
+		a = new A();
+		b = new B();
+
+		// result type of equality operation verified
+		// by assigning to int or float variable
+		r = a == b;
+	}
+}

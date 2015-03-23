@@ -1,0 +1,15 @@
+// Test Check valid returntype
+// rule 2.3.22
+
+class Main {
+	boolean i;
+	
+	boolean m(){
+		return 5;
+	}
+	
+	void main() {
+		i = m();
+
+	}
+}

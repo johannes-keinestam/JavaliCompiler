@@ -1,0 +1,19 @@
+//Test case for multiple dead assignment removal
+class A {}
+class B extends A {}
+
+class Main {
+	void main() {
+		int a;
+		int b;
+		boolean t;
+		float x;
+		float y;
+		a = 1;
+		b = 2; //this should be removed since it is never used.
+		t = true; //this should be removed since it is never used.
+		x = 1.0; //this should be removed since it is never used.
+		y = 2.0; //this should be removed since it is never used.
+		print(a);
+	}
+}

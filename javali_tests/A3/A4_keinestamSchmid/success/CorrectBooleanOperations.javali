@@ -1,0 +1,16 @@
+// Rule 2.3.6: Tests that boolean operations can be applied to arguments of 
+// boolean type, and produces a boolean.
+class Main {
+	void main() {
+		boolean bi, b0, b1;
+
+		b0 = true; b1 = false;
+
+		// result type of arithmetic operation verified
+		// by assigning to boolean variable
+		bi = !b0;
+		bi = !!b1;
+		bi = b0 && b1;
+		bi = b0 || b1;
+	}
+}

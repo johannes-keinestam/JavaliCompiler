@@ -1,0 +1,21 @@
+// Rule 2.2.2: The superclass specified for each class exists
+
+class Main {
+	void main() {
+		int i;
+	}
+}
+
+class SuperClass {
+	void swap() {
+		int i;
+	}
+}
+
+class SubClass extends SuperClass {
+	void snap() {
+		int j;
+	}
+}
+
+

@@ -1,0 +1,28 @@
+// Constant Folding: Complex While case.
+class A {}
+class B extends A {}
+
+class Main {
+	void main() {
+		int a;
+		int b;
+		boolean x;
+		boolean y;
+
+		a = 1;
+		b = 2;
+		x = true;
+		y = true;
+		while (x) {
+			if (y) {
+				b = a + 5;
+			} else {
+				b = a + 6;
+				a = b;
+			}
+			b = a + 2;
+		}
+		write(b);
+	}
+}
+

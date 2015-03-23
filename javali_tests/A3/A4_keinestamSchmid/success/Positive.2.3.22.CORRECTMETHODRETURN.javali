@@ -1,0 +1,33 @@
+//POS 2.3.22
+//Methord return statement must be the correct type
+
+class Super{
+	
+}
+class Sub extends Super{
+	
+}
+class Main{
+	int x;
+	boolean b;
+	Super s;
+	void main(){
+		x = 10;
+		x = increment(x);
+		b = false;
+		b = negate(b);
+		s = returnSub();
+	}
+	int increment(int x){
+		return x+1;
+	}
+	boolean negate(boolean b){
+		return !b;
+	}
+
+	Super returnSub(){
+		Sub s;
+		s = new Sub();
+		return s;
+	}
+}

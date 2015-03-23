@@ -1,0 +1,10 @@
+//When creating a new array, the length must be of integer type. (TYPE ERROR)
+//Rule 2.3.16
+
+class Main {
+int y;
+	void main() {
+		int[] x; 
+		x = new int[10.4];
+	}
+}

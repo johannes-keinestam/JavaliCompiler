@@ -1,0 +1,11 @@
+//DeadAssignment: Simple case. Nothing can be removed since the variable is used later.
+class A {}
+class B extends A {}
+
+class Main {
+	void main() {
+		int a;
+		a = 1;
+		write(a);
+	}
+}
